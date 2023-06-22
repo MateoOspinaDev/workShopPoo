@@ -1,6 +1,6 @@
 package org.example.entidades;
 
-public abstract class Embarcacion {
+public class Embarcacion {
     private Capitan capitan;
     private double precioBase;
     private double valorAdicional;
