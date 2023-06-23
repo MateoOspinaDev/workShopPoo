@@ -1,4 +1,5 @@
-package org.example.entidades;
+package org.example.entidades.*;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class Empresa {
 
     public void mostrarDatos(){
         for (Embarcacion embarcacion: embarcaciones) {
-            System.out.println(embarcacion.toString());
+            embarcacion.mostrarInformacion();
         }
     }
 }

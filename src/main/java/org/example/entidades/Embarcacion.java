@@ -58,13 +58,13 @@ public class Embarcacion {
         this.eslora = eslora;
     }
 
-    @Override
-    public String toString() {
-        return
-                capitan.toString() +
-                ", Precio de alquiler=" + this.calcularMontoAlquiler() +
-                ", valor adicional=" + valorAdicional +
-                ", Año de Fabricación=" + anioFabricacion +
-                ", Tamaño =" + eslora +" m";
+
+    public void mostrarInformacion() {
+        System.out.println("la informacion del capitan es: \n");
+        capitan.toString();
+        System.out.println("\nEl precio del alquiler de la embarcacion es: $"+this.calcularMontoAlquiler());
+        System.out.println("El año de fabricacion de la embarcacion es: "+anioFabricacion);
+        System.out.println("El tamaño de la embarcacion es "+eslora+" m");
+
     }
 }
