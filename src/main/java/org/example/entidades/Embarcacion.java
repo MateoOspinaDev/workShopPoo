@@ -34,9 +34,6 @@ public class Embarcacion {
         return precioBase;
     }
 
-    public void setPrecioBase(double precioBase) {
-        this.precioBase = precioBase;
-    }
 
     public double getValorAdicional() {
         return valorAdicional;
