@@ -23,7 +23,7 @@ public class Empresa {
 
     public void mostrarDatos(){
         for (Embarcacion embarcacion: embarcaciones) {
-            embarcacion.toString();
+            System.out.println(embarcacion.toString());
         }
     }
 }

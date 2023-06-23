@@ -3,14 +3,13 @@ package org.example.entidades;
 public class Embarcacion {
     private Capitan capitan;
     private double precioBase;
-    private double valorAdicional;
+    private double valorAdicional = 20000;
     private int anioFabricacion;
     private double eslora;
 
-    public Embarcacion(Capitan capitan, double precioBase, double valorAdicional, int anioFabricacion, double eslora) {
+    public Embarcacion(Capitan capitan, double precioBase, int anioFabricacion, double eslora) {
         this.capitan = capitan;
         this.precioBase = precioBase;
-        this.valorAdicional = valorAdicional;
         this.anioFabricacion = anioFabricacion;
         this.eslora = eslora;
     }
@@ -61,12 +60,11 @@ public class Embarcacion {
 
     @Override
     public String toString() {
-        return "Embarcacion{" +
-                "capitan=" + capitan +
-                ", precioBase=" + precioBase +
-                ", valorAdicional=" + valorAdicional +
-                ", anioFabricacion=" + anioFabricacion +
-                ", eslora=" + eslora +
-                '}';
+        return
+                capitan.toString() +
+                ", Precio de alquiler=" + this.calcularMontoAlquiler() +
+                ", valor adicional=" + valorAdicional +
+                ", Año de Fabricación=" + anioFabricacion +
+                ", Tamaño =" + eslora +" m";
     }
 }

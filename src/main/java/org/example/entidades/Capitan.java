@@ -34,4 +34,13 @@ public class Capitan {
     public void setMatriculaNavegacion(String matriculaNavegacion) {
         this.matriculaNavegacion = matriculaNavegacion;
     }
+
+    @Override
+    public String toString() {
+        return "Datos del capitan = {" +
+                "Nombre='" + nombre + '\'' +
+                ", Apellido='" + apellido + '\'' +
+                ", Matricula de navegación='" + matriculaNavegacion + '\'' +
+                '}';
+    }
 }
