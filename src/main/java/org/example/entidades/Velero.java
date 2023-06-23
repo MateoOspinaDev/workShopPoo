@@ -21,6 +21,4 @@ public class Velero extends Embarcacion implements Grande {
     public void setCantidadMastiles(int cantidadMastiles) {
         this.cantidadMastiles = cantidadMastiles;
     }
-
-
 }

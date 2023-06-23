@@ -37,10 +37,9 @@ public class Capitan {
 
     @Override
     public String toString() {
-        return "Datos del capitan = {" +
+        return
                 "Nombre='" + nombre + '\'' +
                 ", Apellido='" + apellido + '\'' +
-                ", Matricula de navegación='" + matriculaNavegacion + '\'' +
-                '}';
+                ", Matricula de navegación='" + matriculaNavegacion + '\'';
     }
 }

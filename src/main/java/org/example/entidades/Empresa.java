@@ -1,4 +1,4 @@
-package org.example.entidades.*;
+package org.example.entidades;
 
 
 import java.util.ArrayList;
