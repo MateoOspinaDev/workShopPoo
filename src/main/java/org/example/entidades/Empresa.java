@@ -20,4 +20,10 @@ public class Empresa {
             System.out.println("Monto de alquiler: " + montoAlquiler);
         }
     }
+
+    public void mostrarDatos(){
+        for (Embarcacion embarcacion: embarcaciones) {
+            embarcacion.toString();
+        }
+    }
 }

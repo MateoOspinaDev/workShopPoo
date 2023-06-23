@@ -1,6 +1,6 @@
 package org.example.entidades;
 
-public class Velero extends Embarcacion {
+public class Velero extends Embarcacion implements Grande {
     private int cantidadMastiles;
 
     public Velero(Capitan capitan, double precioBase, double valorAdicional, int anioFabricacion, double eslora, int cantidadMastiles) {
@@ -8,6 +8,7 @@ public class Velero extends Embarcacion {
         this.cantidadMastiles = cantidadMastiles;
     }
 
+    @Override
     public boolean esGrande() {
         return cantidadMastiles > 4;
     }
@@ -19,4 +20,6 @@ public class Velero extends Embarcacion {
     public void setCantidadMastiles(int cantidadMastiles) {
         this.cantidadMastiles = cantidadMastiles;
     }
+
+
 }

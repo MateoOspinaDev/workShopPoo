@@ -1,6 +1,6 @@
 package org.example.entidades;
 
-public class Yate extends Embarcacion {
+public class Yate extends Embarcacion implements Lujo{
     private int cantidadCamarotes;
 
     public Yate(Capitan capitan, double precioBase, double valorAdicional, int anioFabricacion, double eslora, int cantidadCamarotes) {
@@ -8,6 +8,7 @@ public class Yate extends Embarcacion {
         this.cantidadCamarotes = cantidadCamarotes;
     }
 
+    @Override
     public boolean esLujoso() {
         return cantidadCamarotes > 7;
     }

@@ -58,4 +58,15 @@ public class Embarcacion {
     public void setEslora(double eslora) {
         this.eslora = eslora;
     }
+
+    @Override
+    public String toString() {
+        return "Embarcacion{" +
+                "capitan=" + capitan +
+                ", precioBase=" + precioBase +
+                ", valorAdicional=" + valorAdicional +
+                ", anioFabricacion=" + anioFabricacion +
+                ", eslora=" + eslora +
+                '}';
+    }
 }
